@@ -137,7 +137,7 @@ const info = {
         },
         {
             title: "Web Development",
-            description: "Provided by Coursera Techienest",
+            description: "Provided by Techienest",
             icon: "techienest_logo.jpeg",
             link: "https://drive.google.com/file/d/1AiJ09mlHyxIcJj6nPw-Gnv9oMA8rto2i/view?usp=drive_link"
         },
