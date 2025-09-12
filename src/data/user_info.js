@@ -24,15 +24,15 @@ const info = {
 			description: "DocLink is a MERN stack-based doctor appointment booking system. It allows patients to schedule appointments, manage bookings, and connect with doctors seamlessly.",
             technologies: "React, Tailwind, Express, MongoDb , Node",
 			github: "https://github.com/Avinashjat/DocLink",
-            link: " "
+            link: "https://doclink-doctor-2gk4.onrender.com"
 		},
 
         {
-			title: "FoodCounter",
+			title: "SnapBite",
 			description: "Developed a MERN stack food ordering website with secure authentication, responsive design, and real-time order tracking for a seamless user experience.",
 			technologies: "React, Bootstrap, Express, MongoDb , Node",
-			github: "https://github.com/Avinashjat/DocLink",
-            link: ""
+			github: "https://github.com/Avinashjat/SnapBite",
+            link: "https://snapbite-food.onrender.com/"
 		},
 
         {
@@ -47,8 +47,8 @@ const info = {
 			title: "AVI Portfolio",
 			description: "Developed a responsive React portfolio website with dynamic components, smooth navigation, modern UI/UX, and integrated contact functionality.",
 			technologies: "React, Tailwind",
-			github: "https://github.com/Avinashjat",
-            link: ""
+			github: "https://github.com/Avinashjat/avinash-portfolio",
+            link: "https://avinash-portfolio-one.vercel.app/"
 		},
 
 		// {
