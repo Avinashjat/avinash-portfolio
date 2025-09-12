@@ -2,10 +2,10 @@ import { BiLogoNetlify, BiLogoPostgresql, BiLogoTypescript } from "react-icons/b
 import { CgVercel } from "react-icons/cg";
 import { DiGithubAlt, DiMongodb } from "react-icons/di";
 import { FaDocker } from "react-icons/fa";
-import { FaAws, FaCss3Alt, FaDigitalOcean, FaGitAlt, FaGitlab, FaHtml5, FaNodeJs, FaPython, FaReact, FaVuejs } from "react-icons/fa6";
+import { FaAws, FaCss3Alt, FaDigitalOcean, FaGitAlt, FaGitlab, FaHtml5, FaNodeJs, FaPython, FaReact, FaPython } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoLogoFirebase } from "react-icons/io5";
-import { SiAntdesign, SiExpress, SiMysql, SiPostman,  SiTailwindcss,  } from "react-icons/si";
+import { SiAntdesign, SiExpress, SiMysql, SiPostman,  SiTailwindcss, SiRedux } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiCplusplus, SiPostgresql } from "react-icons/si";
 
@@ -72,7 +72,18 @@ function Skills() {
 				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
         <SiMysql className="text-2xl" />  SQL
         </span>
-				
+
+		  <span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 rounded-xl font-medium bg-red-100 text-red-800 hover:-translate-y-1.5 transition-translate duration-500 dark:bg-red-800/30 dark:text-red-500">
+          <FaPython className="text-2xl" /> Python
+        </span>
+        
+        <span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 rounded-xl font-medium bg-red-100 text-red-800 hover:-translate-y-1.5 transition-translate duration-500 dark:bg-red-800/30 dark:text-red-500">
+          <BiLogoTypescript className="text-2xl" /> TypeScript
+        </span>
+
+        <span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 rounded-xl font-medium bg-red-100 text-red-800 hover:-translate-y-1.5 transition-translate duration-500 dark:bg-red-800/30 dark:text-red-500">
+          <SiRedux className="text-2xl" /> Redux
+        </span>
       </div>
     </section>
   );
