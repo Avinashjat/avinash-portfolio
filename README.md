@@ -17,21 +17,21 @@ https://avinash-portfolio-one.vercel.app/
 ## Installation
 1. Clone the repository
     ```bash 
-    git clone https://github.com/dsbalico/dsfolio-v1.git
+    git clone https://github.com/Avinashjat/avinash-portfolio-v1.git
     ```
 2. Change into the project directory
     ```bash
-    cd dsfolio-v1
+    cd avinash-portfolio-v1
     ```
 3. Install dependencies
     ```bash
-    yarn install 
+    npm install 
     ```
 
 ## Usage
 To start the development server and view the project in your browser, run the following command:
 ```bash
-yarn dev
+npm run dev
 ```
 Visit http://localhost:5173/ in your browser
 
