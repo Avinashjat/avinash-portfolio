@@ -2,7 +2,7 @@
 # Avinash Jat Portfolio
 
 <center>
-    <img src="/public/cover.png" alt="Avinash Portfolio image" />
+    <img src="/public/Avinash-portfolio-image.png" alt="Avinash Portfolio image" />
 </center>
 
 <center>
