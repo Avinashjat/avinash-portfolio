@@ -37,7 +37,7 @@ const info = {
 
         {
 			title: "Coffeeca",
-			description: "Designed a modern coffee shop webpage with a responsive layout, interactive menu, and seamless user experience for online browsing.",
+			description: "Designed a modern coffee shop webpage with a responsive layout, multiple option  , interactive menu, and seamless user experience for online browsing.    ",
 			technologies: "HTML5, CSS3, Bootstrap , Javascript",
 			github: "https://github.com/Avinashjat/Coffeeca",
             link: ""
