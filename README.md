@@ -1,5 +1,5 @@
 
-# DSFolio V1
+# Avinash Jat Portfolio
 
 <center>
     <img src="/public/cover.png" alt="DSFolio" />
@@ -7,7 +7,7 @@
 
 <center>
 
-https://dsfolio-v1.vercel.app/
+https://avinash-portfolio-one.vercel.app/
 
 </center>
 
