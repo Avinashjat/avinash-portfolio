@@ -2,7 +2,7 @@ import { BiLogoNetlify, BiLogoPostgresql, BiLogoTypescript } from "react-icons/b
 import { CgVercel } from "react-icons/cg";
 import { DiGithubAlt, DiMongodb } from "react-icons/di";
 import { FaDocker } from "react-icons/fa";
-import { FaAws, FaCss3Alt, FaDigitalOcean, FaGitAlt, FaGitlab, FaHtml5, FaNodeJs, FaPython, FaReact, FaPython } from "react-icons/fa6";
+import { FaAws, FaCss3Alt, FaDigitalOcean, FaGitAlt, FaGitlab, FaHtml5, FaNodeJs, FaPython, FaReact } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiAntdesign, SiExpress, SiMysql, SiPostman,  SiTailwindcss, SiRedux } from "react-icons/si";
