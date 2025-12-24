@@ -30,9 +30,17 @@ const info = {
         {
 			title: "SnapBite",
 			description: "Developed a MERN stack food ordering website with secure authentication, responsive design, and real-time order tracking for a seamless user experience.",
-			technologies: "React, Bootstrap, Express, MongoDb , Node",
+			technologies: "React, Tailwind , Express, MongoDb , Node",
 			github: "https://github.com/Avinashjat/SnapBite",
             link: "https://snapbite-food.onrender.com/"
+		},
+
+        {
+			title: "Lumix AI",
+			description: "Built Lumix AI, a multi-feature AI web platform providing content generation, image processing, and resume analysis using multiple free APIs.Integrated Clerk authentication to ensure secure and seamless user access.",
+			technologies: "React, Tailwind, Express, Postgres , Node , clerk ",
+			github: "https://github.com/Avinashjat/Lumix.ai-Web-App",
+            link: "https://github.com/Avinashjat/Lumix.ai-Web-App"
 		},
 
         {
@@ -51,21 +59,6 @@ const info = {
             link: "https://avinash-portfolio-one.vercel.app/"
 		},
 
-		// {
-		// 	title: "Sudoku Solver",
-		// 	description: "Sudoku Solver is a web application that can generate or solve sudoku problems using simulated annealing, an optimization algorithm.",
-		// 	technologies: "React, Tailwind, TypeScript",
-		// 	github: "https://github.com/dsbalico/sudoku-solver-using-simulated-annealing",
-        //     link: "https://sudoku-solver-sa.netlify.app/"
-		// },
-
-		// {
-		// 	title: "Probability Pick",
-		// 	description: "Probability Pick is a PCSO Lotto Number Generator that calculates the likelihood of selecting winning numbers based on historical draw data.",
-		// 	technologies: "React, Tailwind, Flask",
-		// 	github: "https://github.com/dsbalico/pcso-lotto-number-generator",
-        //     link: "https://probability-pick.netlify.app/"
-		// },
     ],
 
     // ============ EDUCATION ============
