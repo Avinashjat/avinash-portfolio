@@ -1,6 +1,6 @@
 {
-  "name": "dsbalico-portfolio",
-  "homepage": "https://Avinashjat.github.io/avinash-portfolio",
+  "name": "avinashjat-portfolio",
+  "homepage": "/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "framer-motion": "^12.34.2",
     "gh-pages": "^6.3.0",
     "lucide-react": "^0.395.0",
     "preline": "^2.3.0",

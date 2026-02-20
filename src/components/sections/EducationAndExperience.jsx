@@ -1,18 +1,30 @@
 import user_info from "../../data/user_info.js";
 import { FaLandmark } from "react-icons/fa";
 import { FaBuildingUser } from "react-icons/fa6";
-import { FcGoogle } from "react-icons/fc";
 import { PiCertificateFill } from "react-icons/pi";
-import { SiHackerrank, SiIbm } from "react-icons/si";
+import { motion } from "framer-motion";
 
 function EducationAndExperience() {
   return (
-    <section
+    <motion.section
       id="education-and-experience"
       className="mt-20 mx-4 lg:mx-20 flex flex-col md:flex-row gap-4 md:gap-2"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, margin: "-80px" }}
+      variants={{
+        hidden: {},
+        show: { transition: { staggerChildren: 0.25 } }
+      }}
     >
       {/* =========== EDUCATION =========== */}
-      <div className="w-full md:w-[80%]">
+      <motion.div
+        className="w-full md:w-[80%]"
+        variants={{
+          hidden: { opacity: 0, y: 40 },
+          show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeOut" } }
+        }}
+      >
         {/* =========== EDUCATION TITLE =========== */}
         <h4 className="text-xl dark:text-white mb-4 font-bold flex gap-2 items-center">
           <FaLandmark className="text-xl text-red-800 dark:text-red-500" />
@@ -22,7 +34,13 @@ function EducationAndExperience() {
         {/* =========== EDUCATION LIST =========== */}
         {user_info.education.map((edu, index) => {
           return (
-            <div key={index}>
+            <motion.div
+              key={index}
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+              }}
+            >
               {/* =========== DURATION =========== */}
               <div className="ps-2 my-2 first:mt-0 !mt-2">
                 <h3 className="text-xs font-medium uppercase text-zinc-500 dark:text-zinc-400">
@@ -55,37 +73,38 @@ function EducationAndExperience() {
                   </h3>
                 </div>
               </div>
-            </div>
+            </motion.div>
           );
         })}
 
         {/* =========== CERTIFICATES TITLE =========== */}
-        <h4 className="text-xl dark:text-white mt-6 font-bold flex gap-2 items-center">
+        <motion.h4
+          className="text-xl dark:text-white mt-6 font-bold flex gap-2 items-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           <PiCertificateFill className="text-2xl text-red-800 dark:text-red-500" />
           Certificates
-        </h4>
+        </motion.h4>
 
         <div
           data-hs-carousel='{"loadingClasses": "opacity-0"}'
           className="relative mt-4"
         >
-          <div className="hs-carousel relative overflow-hidden w-full h-48 bg-white dark:bg-gray-800 rounded-lg">
+          <motion.div
+            className="hs-carousel relative overflow-hidden w-full h-48 bg-white dark:bg-gray-800 rounded-lg"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
             <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
               {/* =========== CERTIFICATES LIST =========== */}
               {user_info.certificates.map((cert, index) => {
                 return (
                   <div className="hs-carousel-slide relative" key={index}>
-                    {/* {cert.icon === "ibm" ? (
-                      <SiIbm className="text-blue-500 absolute right-5 top-0 text-5xl" />
-                    
-                    ) : cert.icon === "google" ? (
-                      <FcGoogle className="text-blue-500 absolute right-5 top-3 text-3xl" />
-                    ) : (
-                      <SiHackerrank className="text-green-500 absolute right-5 top-3 text-3xl" />
-                  )} */}
-
-                  
-
                     <div className="flex justify-center items-center h-full bg-gray-100 p-6 dark:bg-neutral-900">
                       <div className="hs-tooltip [--placement:bottom] inline-block">
                         <a
@@ -117,7 +136,7 @@ function EducationAndExperience() {
                 );
               })}
             </div>
-          </div>
+          </motion.div>
 
           <button
             type="button"
@@ -176,10 +195,16 @@ function EducationAndExperience() {
             })}
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* =========== EXPERIENCE =========== */}
-      <div className="w-full">
+      <motion.div
+        className="w-full"
+        variants={{
+          hidden: { opacity: 0, y: 40 },
+          show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeOut", delay: 0.1 } }
+        }}
+      >
         {/* =========== EXPERIENCE TITLE =========== */}
         <h4 className="text-xl dark:text-white mb-4 font-bold flex gap-2 items-center">
           <FaBuildingUser className="text-2xl text-red-800 dark:text-red-500" />
@@ -190,7 +215,13 @@ function EducationAndExperience() {
           {/* =========== EXPERIENCE LIST =========== */}
           {user_info.experience.map((exp, index) => {
             return (
-              <div key={index}>
+              <motion.div
+                key={index}
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+                }}
+              >
                 <div className="ps-2 my-2 first:mt-0 !mt-2">
                   <h3 className="text-xs font-medium uppercase text-zinc-500 dark:text-zinc-400">
                     {exp.duration}
@@ -249,12 +280,12 @@ function EducationAndExperience() {
                     </ul>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
 

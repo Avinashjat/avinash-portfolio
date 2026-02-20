@@ -1,91 +1,91 @@
-import { BiLogoNetlify, BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
+import { BiLogoNetlify, BiLogoTypescript } from "react-icons/bi";
 import { CgVercel } from "react-icons/cg";
 import { DiGithubAlt, DiMongodb } from "react-icons/di";
-import { FaDocker } from "react-icons/fa";
-import { FaAws, FaCss3Alt, FaDigitalOcean, FaGitAlt, FaGitlab, FaHtml5, FaNodeJs, FaPython, FaReact } from "react-icons/fa6";
+import {
+  FaCss3Alt,
+  FaGitAlt,
+  FaHtml5,
+  FaNodeJs,
+  FaPython,
+  FaReact,
+} from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io";
-import { IoLogoFirebase } from "react-icons/io5";
-import { SiAntdesign, SiExpress, SiMysql, SiPostman,  SiTailwindcss, SiRedux } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiCplusplus, SiPostgresql } from "react-icons/si";
+import {
+  SiExpress,
+  SiMysql,
+  SiPostman,
+  SiTailwindcss,
+  SiRedux,
+} from "react-icons/si";
+import { SiCplusplus } from "react-icons/si";
+import { motion } from "framer-motion";
 
 function Skills() {
   return (
-    <section id="skills" className="mx-4 lg:mx-20">
+    <motion.section
+      id="skills"
+      className="mx-4 lg:mx-20"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, margin: "-80px" }}
+      variants={{
+        hidden: {},
+        show: { transition: { staggerChildren: 0.18 } }
+      }}
+    >
       {/* =========== SKILLS TITLE =========== */}
-      <h4 className="text-4xl font-bold text-center mt-20 dark:text-white">
+      <motion.h4
+        className="text-4xl font-bold text-center mt-20 dark:text-white"
+        variants={{
+          hidden: { opacity: 0, y: 40 },
+          show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: "easeOut" } }
+        }}
+      >
         Technologies I Use.
-      </h4>
+      </motion.h4>
+
       {/* =========== LIST OF SKILLS =========== */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 mt-8">
-				<span className="inline-flex items-center justify-between gap-x-2 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaHtml5 className="text-2xl" /> HTML
-        </span>
-
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaCss3Alt className="text-2xl" /> CSS
-        </span>
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <IoLogoJavascript className="text-2xl" /> JavaScript
-
-        </span>
-				
-        <span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaReact className="text-2xl" /> React
-        </span>
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <SiExpress className="text-2xl" /> Express
-        </span>
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaNodeJs className="text-2xl" /> NodeJS
-        </span>
-				
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <SiTailwindcss className="text-2xl" /> Tailwind
-        </span>
-			
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <FaGitAlt className="text-2xl" /> Git
-        </span>
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <DiGithubAlt className="text-2xl" /> Github
-        </span>
-				
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <BiLogoNetlify className="text-2xl" /> Netlify
-        </span>
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <CgVercel className="text-2xl" /> Vercel
-        </span>
-				
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <SiPostman className="text-2xl" /> Postman
-        </span>
-				
-			
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-        <SiCplusplus className="text-2xl" /> C++
-        </span>
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-          <DiMongodb className="text-2xl" /> MongoDB
-        </span>
-				<span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500">
-        <SiMysql className="text-2xl" />  SQL
-        </span>
-
-		  <span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 rounded-xl font-medium bg-red-100 text-red-800 hover:-translate-y-1.5 transition-translate duration-500 dark:bg-red-800/30 dark:text-red-500">
-          <FaPython className="text-2xl" /> Python
-        </span>
-        
-        <span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 rounded-xl font-medium bg-red-100 text-red-800 hover:-translate-y-1.5 transition-translate duration-500 dark:bg-red-800/30 dark:text-red-500">
-          <BiLogoTypescript className="text-2xl" /> TypeScript
-        </span>
-
-        <span className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 rounded-xl font-medium bg-red-100 text-red-800 hover:-translate-y-1.5 transition-translate duration-500 dark:bg-red-800/30 dark:text-red-500">
-          <SiRedux className="text-2xl" /> Redux
-        </span>
+        {[
+          { icon: <FaHtml5 className="text-2xl" />, name: "HTML" },
+          { icon: <FaCss3Alt className="text-2xl" />, name: "CSS" },
+          { icon: <IoLogoJavascript className="text-2xl" />, name: "JavaScript" },
+          { icon: <FaReact className="text-2xl" />, name: "React" },
+          { icon: <SiExpress className="text-2xl" />, name: "Express" },
+          { icon: <FaNodeJs className="text-2xl" />, name: "NodeJS" },
+          { icon: <SiTailwindcss className="text-2xl" />, name: "Tailwind" },
+          { icon: <FaGitAlt className="text-2xl" />, name: "Git" },
+          { icon: <DiGithubAlt className="text-2xl" />, name: "Github" },
+          { icon: <BiLogoNetlify className="text-2xl" />, name: "Netlify" },
+          { icon: <CgVercel className="text-2xl" />, name: "Vercel" },
+          { icon: <SiPostman className="text-2xl" />, name: "Postman" },
+          { icon: <SiCplusplus className="text-2xl" />, name: "C++" },
+          { icon: <DiMongodb className="text-2xl" />, name: "MongoDB" },
+          { icon: <SiMysql className="text-2xl" />, name: "SQL" },
+          { icon: <FaPython className="text-2xl" />, name: "Python" },
+          { icon: <BiLogoTypescript className="text-2xl" />, name: "TypeScript" },
+          { icon: <SiRedux className="text-2xl" />, name: "Redux" }
+        ].map((skill, index) => (
+          <motion.span
+            key={index}
+            className="inline-flex items-center justify-between gap-x-2 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl font-medium bg-red-100 text-red-800 dark:bg-red-800/30 dark:text-red-500"
+            variants={{
+              hidden: { opacity: 0, y: 40, scale: 0.96 },
+              show: {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                transition: { duration: 0.7, ease: "easeOut" }
+              }
+            }}
+            whileHover={{ y: -8, scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            {skill.icon} {skill.name}
+          </motion.span>
+        ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
 

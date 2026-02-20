@@ -1,6 +1,7 @@
 import user_info from "../../data/user_info.js";
 import GitHubButton from "react-github-btn";
 import { FaArrowCircleUp } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function Footer({ theme }) {
   const scrollToTop = () => {
@@ -11,31 +12,60 @@ function Footer({ theme }) {
   };
 
   return (
-    <footer className="p-4 text-center md:flex justify-between">
+    <motion.footer
+      className="p-4 text-center md:flex justify-between"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.9, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.6 }}
+
+    >
       {/* =========== GITHUB BUTTON =========== */}
-      <GitHubButton
+      <motion.div
         className="self-center"
-        href="https://github.com/avinashjat"
-        data-color-scheme={theme}
-        data-icon="octicon-star"
-        data-size="large"
-        data-show-count="true"
-        aria-label="Star avinashjat/avinashjat on GitHub"
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        whileHover={{ y: -2 }}
       >
-        Star on Github
-      </GitHubButton>
+        <GitHubButton
+          href="https://github.com/avinashjat"
+          data-color-scheme={theme}
+          data-icon="octicon-star"
+          data-size="large"
+          data-show-count="true"
+          aria-label="Star avinashjat/avinashjat on GitHub"
+        >
+          Github
+        </GitHubButton>
+      </motion.div>
+
       {/* =========== USER COPYRIGHT =========== */}
-      <p className="text-zinc-600 self-center mt-2 md:mt-0 dark:text-zinc-300 text-sm text-center font-light">
+      <motion.p
+        className="text-zinc-600 self-center mt-2 md:mt-0 dark:text-zinc-300 text-sm text-center font-light"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.85, ease: "easeOut", delay: 0.05 }}
+        viewport={{ once: true }}
+      >
         {user_info.footer}
-      </p>
+      </motion.p>
+
       {/* =========== SCROLL ON TOP BUTTON =========== */}
-      <button
+      <motion.button
         onClick={() => scrollToTop()}
         className="text-zinc-600 self-center mt-2 md:mt-0 dark:text-zinc-300 mx-auto md:mx-0 text-sm font-light flex gap-2"
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        whileHover={{ x: 6 }}
+        whileTap={{ scale: 0.96 }}
       >
         <FaArrowCircleUp className="self-center text-red-800 dark:text-red-500" /> Go back to top
-      </button>
-    </footer>
+      </motion.button>
+    </motion.footer>
   );
 }
 

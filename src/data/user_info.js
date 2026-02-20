@@ -4,8 +4,8 @@ const info = {
         name: "Avinash Jat",
         description: "I am a software engineer with expertise in full-stack web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
         role: "Full-Stack Developer",
-        photo: "../avi-jat.jpg",
-        email: "dev.avinashjat.com",
+        photo: "../Avinash_jat_1.png",
+        email: "dev.avinashjat@gmail.com",
     },
 
     // ============ SOCIAL LINKS ============
@@ -65,7 +65,7 @@ const info = {
     education: [
         {
             school: "Poornima College of Engineering",
-            degree: "Bachelor of S Computer Science",
+            degree: "Bachelor of Computer Science",
             duration: "2021 - 2025",
             image: "pce.png"
         },
@@ -94,7 +94,7 @@ const info = {
         {
             position: "MERN Stack Developer Trainee",
             company: "Learn And Build",
-            duration: "july 2023 - Oct 2023 Months)",
+            duration: "july 2023 - Oct 2023 (3 Months)",
             image: "learn_and_build_logo.jpeg",
             descriptions: [
                 "Completed an extensive training program in MERN stack development.",
@@ -105,7 +105,7 @@ const info = {
         {
             position: "Work Immersion - Web Developer",
             company: "Techienest",
-            duration: "july 2022 - Sep 2022 (1 Month)",
+            duration: "july 2022 - Sep 2022 (2 Months)",
             image: "techienest_logo.jpeg",
             descriptions: [
                 "Designed responsive and user-friendly interfaces with javascript and Tailwind CSS",
@@ -134,36 +134,7 @@ const info = {
             icon: "techienest_logo.jpeg",
             link: "https://drive.google.com/file/d/1AiJ09mlHyxIcJj6nPw-Gnv9oMA8rto2i/view?usp=drive_link"
         },
-        // {
-        //     title: "Technical Support Fundamentals Certificate",
-        //     description: "Provided by Coursera & Authorized by Google",
-        //     icon: "google",
-        //     link: "https://www.coursera.org/account/accomplishments/verify/P9EH5HNYRESZ"
-        // },
-    //     {
-    //         title: "Introduction to Web Development with HTML, CSS, JavaScript Certificate",
-    //         description: "Provided by Coursera & Authorized by IBM",
-    //         icon: "ibm",
-    //         link: "https://www.credly.com/badges/7b88eb00-e1f9-4ae6-be2a-3b2ae8983c44"
-    //     },
-    //     {
-    //         title: "Introduction to Cloud Computing Certificate",
-    //         description: "Provided by Coursera & Authorized by IBM",
-    //         icon: "ibm",
-    //         link: "https://www.credly.com/badges/514b694a-8dc4-418d-9af4-61908dc29ca8"
-    //     },
-    //     {
-    //         title: "Django Application Development with SQL and Databases Certificate",
-    //         description: "Provided by Coursera & Authorized by IBM",
-    //         icon: "ibm",
-    //         link: "https://www.credly.com/badges/a36dd8a3-1050-4c4e-bcef-97b39babf55e"
-    //     },
-    //     {
-    //         title: "Front-End Developer (React) Certificate",
-    //         description: "Provided by HackerRank",
-    //         icon: "hackerrank",
-    //         link: "https://www.hackerrank.com/certificates/631ac3acf267"
-    //     },
+       
     //     {
     //         title: "Software Engineer Certificate",
     //         description: "Provided by HackerRank",
