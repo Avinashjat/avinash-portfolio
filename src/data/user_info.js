@@ -24,7 +24,7 @@ const info = {
 			description: "DocLink is a MERN stack-based doctor appointment booking system. It allows patients to schedule appointments, manage bookings, and connect with doctors seamlessly.",
             technologies: "React, Tailwind, Express, MongoDb , Node",
 			github: "https://github.com/Avinashjat/DocLink",
-            link: "https://doclink-doctor-2gk4.onrender.com"
+            link: "https://doclink-6a1w.onrender.com"
 		},
 
         {
