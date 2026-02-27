@@ -40,7 +40,7 @@ const info = {
 			description: "Built Lumix AI, a multi-feature AI web platform providing content generation, image processing, and resume analysis using multiple free APIs.Integrated Clerk authentication to ensure secure and seamless user access.",
 			technologies: "React, Tailwind, Express, Postgres , Node , clerk ",
 			github: "https://github.com/Avinashjat/Lumix.ai-Web-App",
-            link: "https://github.com/Avinashjat/Lumix.ai-Web-App"
+            link: "https://lumix-ai-ebon.vercel.app/"
 		},
 
         {
