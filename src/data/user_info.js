@@ -150,7 +150,7 @@ const info = {
     },
 
     // ============ FOOTER ============
-    footer: "© 2025 Avinash Jat. All Rights Reserved"
+    footer: "© 2026 Avinash Jat. All Rights Reserved"
 }
 
 export default info
