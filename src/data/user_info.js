@@ -26,7 +26,7 @@ const info = {
         "DocLink is a MERN stack-based doctor appointment booking system. It allows patients to schedule appointments, manage bookings, and connect with doctors seamlessly.",
       technologies: "React, Tailwind, Express, MongoDb , Node",
       github: "https://github.com/Avinashjat/DocLink",
-      link: "https://doclink-doctor-2gk4.onrender.com",
+      link: "https://doclink-6a1w.onrender.com",
     },
 
     {
@@ -44,7 +44,7 @@ const info = {
         "Built Lumix AI, a multi-feature AI web platform providing content generation, image processing, and resume analysis using multiple free APIs.Integrated Clerk authentication to ensure secure and seamless user access.",
       technologies: "React, Tailwind, Express, Postgres , Node , clerk ",
       github: "https://github.com/Avinashjat/Lumix.ai-Web-App",
-      link: "https://github.com/Avinashjat/Lumix.ai-Web-App",
+      link: "https://lumix-ai-tq1h.onrender.com/",
     },
 
     {
@@ -107,6 +107,7 @@ const info = {
         "Mentored by senior developers on best practices and code optimization.",
       ],
     },
+
     {
       position: "Work Immersion - Web Developer",
       company: "Techienest",
@@ -156,7 +157,7 @@ const info = {
   },
 
   // ============ FOOTER ============
-  footer: "© 2025 Avinash Jat. All Rights Reserved",
+  footer: "© 2026 Avinash Jat. All Rights Reserved",
 };
 
 export default info;
